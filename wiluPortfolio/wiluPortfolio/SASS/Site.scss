@@ -249,6 +249,12 @@ textarea {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .content {
+        left: 237px;
+    }
+}
+
 // 6 is the number of animation.
 // Here, there are 4 lines :
 

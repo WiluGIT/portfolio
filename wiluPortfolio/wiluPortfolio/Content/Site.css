@@ -29,6 +29,7 @@ textarea {
   border-radius: 8px;
   left: 100px; }
 
+
 /*Bootstrap Overrides*/
 .navbar-nav {
   float: right;
@@ -165,3 +166,9 @@ textarea {
     transform: translate3d(0, -50%, 0); }
   33.32%, 45.98% {
     transform: translate3d(0, 0, 0); } }
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        left:237px;
+    }
+}
