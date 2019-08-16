@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #ecf0f1;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,7 +24,15 @@ textarea {
     max-width: 280px;
 }
 
-
+.tile {
+    color: #ffffff;
+    background-color: #222;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    left: 100px;
+}
 /*Bootstrap Overrides*/
 
 .navbar-nav {
@@ -42,7 +51,7 @@ textarea {
 .content {
     position: absolute;
     top: 80px;
-    left: 150px;
+    left: 765px;
     transform: translate(-50%, -50%);
     height: 160px;
     overflow: hidden;
@@ -50,66 +59,62 @@ textarea {
     font-size: 20px;
     line-height: 40px;
     color: #ecf0f1;
-    &__container
 
-{
-    font-weight: 600;
-    overflow: hidden;
-    height: 40px;
-    padding: 0 40px;
-    &:before
+    &__container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 40px;
+        padding: 0 40px;
 
-{
-    content: '[';
-    left: 0;
-}
+        &:before {
+            content: '[';
+            left: 0;
+        }
 
-&:after {
-    content: ']';
-    position: absolute;
-    right: 0;
-}
+        &:after {
+            content: ']';
+            position: absolute;
+            right: 0;
+        }
 
-&:after, &:before {
-    position: absolute;
-    top: 0;
-    color: #16a085;
-    font-size: 42px;
-    line-height: 40px;
-    -webkit-animation-name: opacity;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: opacity;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
+        &:after, &:before {
+            position: absolute;
+            top: 0;
+            color: #ecf0f1;
+            font-size: 42px;
+            line-height: 40px;
+            -webkit-animation-name: opacity;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-name: opacity;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
 
-&__text {
-    display: inline;
-    float: left;
-    margin: 0;
-}
+        &__text {
+            display: inline;
+            float: left;
+            margin: 0;
+        }
 
-&__list {
-    margin-top: 0;
-    padding-left: 10px;
-    text-align: left;
-    list-style: none;
-    -webkit-animation-name: change;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: change;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    &__item
+        &__list {
+            margin-top: 0;
+            padding-left: 10px;
+            text-align: left;
+            list-style: none;
+            -webkit-animation-name: change;
+            -webkit-animation-duration: 10s;
+            -webkit-animation-iteration-count: infinite;
+            animation-name: change;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
 
-{
-    line-height: 41px;
-    margin: 0;
-}
-
-}
-}
+            &__item {
+                line-height: 41px;
+                margin: 0;
+            }
+        }
+    }
 }
 
 @-webkit-keyframes opacity {
