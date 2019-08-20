@@ -36,21 +36,20 @@ textarea {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #e1e3e6;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+    margin-top:40px;
 }
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-    background-color: #ffffff;
-}
+
 .card-img-top {
     width: 100%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
+}
+.card-text{
+    text-align:center;
 }
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -59,17 +58,25 @@ textarea {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
+
+.img-bd {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /*Bootstrap Overrides*/
 .navbar-nav {
   float: right;
   margin: 0; }
 
 .container {
-  width: 1170px; }
+  max-width: 1170px; }
 
 /*SASS*/
-.content {
+.content-nav {
   position: absolute;
   top: 80px;
   left: 765px;
@@ -198,7 +205,8 @@ textarea {
     transform: translate3d(0, 0, 0); } }
 
 @media only screen and (max-width: 1024px) {
-    .content {
+    .content-nav {
         left:237px;
     }
+
 }

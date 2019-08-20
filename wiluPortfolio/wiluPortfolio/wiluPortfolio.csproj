@@ -136,6 +136,7 @@
     <Content Include="Global.asax" />
     <None Include="SASS\Site.scss" />
     <Content Include="gulpfile.js" />
+    <Content Include="img\GigHub.PNG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
