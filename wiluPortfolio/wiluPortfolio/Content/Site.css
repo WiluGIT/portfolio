@@ -1,9 +1,8 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #ecf0f1;
+    background-color: #ffffff;
     font-family: 'Lato', sans-serif;
-
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -39,11 +38,11 @@ textarea {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #e1e3e6;
+    background-color: #ecf0f1;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 .card-img-top {
@@ -66,7 +65,7 @@ textarea {
 .img-bd {
     width: 100%;
     height: auto;
-    border-bottom:solid;
+
 }
 
 .text-header{
@@ -77,6 +76,7 @@ textarea {
 }
 .text-body{
     text-align:justify;
+    font-size:16px;
 }
 
 
@@ -92,12 +92,111 @@ textarea {
     background-image: url('empty.gif');
 }
 
-
-/*Bootstrap Overrides*/
-.navbar-nav {
-    float: right;
-    margin: 0;
+.social-ft{
+  width:300px;
+  height:50px;
+  float:right;
 }
+
+div.social-ft ul{
+    position:absolute;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+div.social-ft ul li{
+    list-style:none;
+}
+div.social-ft li a{
+    display:block;
+    position:relative;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    text-align:center;
+    text-decoration:none;
+    color:#262626;
+    margin:0 10px;
+    transition: .5s;
+}
+div.social-ft ul li a span{
+    position:absolute;
+    transition:transform .5s;
+}
+
+div.social-ft ul li a span:nth-child(1),
+div.social-ft ul li a span:nth-child(3) {
+    width:100%;
+    height:1px;
+    background:#262626;
+}
+
+div.social-ft ul li a span:nth-child(1){
+    top:0;
+    left:0;
+    transform-origin:right;
+}
+div.social-ft ul li a:hover span:nth-child(1)
+{
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .5s;
+}
+
+div.social-ft ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+div.social-ft ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+
+
+div.social-ft ul li a span:nth-child(2),
+div.social-ft ul li a span:nth-child(4) {
+    width: 1px;
+    height:100%;
+    background: #262626;
+}
+
+div.social-ft ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+div.social-ft ul li a:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+div.social-ft ul li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+div.social-ft ul li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+
+    /*Bootstrap Overrides*/
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
 
 .container-nav {
   min-width:0; }
