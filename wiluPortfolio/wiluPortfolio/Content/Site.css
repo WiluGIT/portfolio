@@ -3,6 +3,7 @@ body {
     padding-bottom: 20px;
     background-color: #ecf0f1;
     font-family: 'Lato', sans-serif;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,17 +24,12 @@ textarea {
   max-width: 280px; }
 
 
-.tile-menu{
-    margin-top:15px;
-}
 .tile {
-  color: #ffffff;
-  background-color: #222;
-  margin: 15px;
-  width: 300px;
-  text-align: center;
-  border-radius: 8px;
-  left: 100px;
+    color: #ffffff;
+    background-color: #222;
+    margin: 15px;
+    text-align: center;
+    border-radius: 8px;
 }
 .card {
     position: relative;
@@ -70,6 +66,7 @@ textarea {
 .img-bd {
     width: 100%;
     height: auto;
+    border-bottom:solid;
 }
 
 .text-header{
@@ -81,6 +78,21 @@ textarea {
 .text-body{
     text-align:justify;
 }
+
+
+.tile-action {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+    background-image: url('empty.gif');
+}
+
+
 /*Bootstrap Overrides*/
 .navbar-nav {
     float: right;
@@ -93,10 +105,10 @@ textarea {
 /*SASS*/
 .content-nav {
   position: absolute;
-  top: 80px;
-  left: 765px;
+  top: 50%;
+  left: 50%;
+  height:auto;
   transform: translate(-50%, -50%);
-  height: 160px;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
@@ -105,8 +117,8 @@ textarea {
   .content__container {
     font-weight: 600;
     overflow: hidden;
-    height: 40px;
-    padding: 0 40px; }
+    height: 45px;
+    padding: 0 38px; }
     .content__container:before {
       content: '[';
       left: 0; }

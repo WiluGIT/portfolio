@@ -11,21 +11,57 @@
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-nav">
-                <div class="content-nav">
-                    <div class="content__container">
-                        <p class="content__container__text">
-                            
-                        </p>
+            <div class="content-nav">
+                <div class="content__container">
+                    <p class="content__container__text">
 
-                        <ul class="content__container__list">
-                            <li class="content__container__list__item">Hello everybody !</li>
-                            <li class="content__container__list__item">I'm Konrad</li>
-                            
-                        </ul>
-                    </div>
+                    </p>
+
+                    <ul class="content__container__list">
+                        <li class="content__container__list__item">Hello everybody !</li>
+                        <li class="content__container__list__item">I'm Konrad</li>
+
+                    </ul>
                 </div>
+            </div>
         </div>
     </div>
+
+    <div class="container body-content" style="margin-top:15px;">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="@Url.Action("Projects","Home")">
+                    <div class="tile">
+                        <i class="glyphicon glyphicon-folder-open" style="font-size:40px;"></i>
+                        <br />
+                        Projekty
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-md-4">
+                <a href="@Url.Action("About","Home")">
+                    <div class="tile">
+                        <i class="glyphicon glyphicon-user" style="font-size:40px;"></i>
+                        <br />
+                        O mnie
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="@Url.Action("Contact","Home")">
+                    <div class="tile">
+                        <i class="glyphicon glyphicon-envelope" style="font-size:40px;"></i>
+                        <br />
+                        Kontakt
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
