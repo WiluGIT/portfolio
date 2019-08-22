@@ -213,8 +213,8 @@ div.social-ft ul li a:hover span:nth-child(4) {
     font-weight: 600;
     overflow: hidden;
     height: 45px;
-    padding: 0 38px;
-    padding-left: 30px; }
+    padding: 0 30px;
+    width: 240px; }
     .content__container:before {
       content: '[';
       left: 0; }
